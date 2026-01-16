@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Pribadi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="popup-overlay" id="popup">
+        <div class="popup-box">
+            <h2>Masukkan Nama Anda</h2>
+            <input type="text" id="username" placeholder="Nama Anda..." required>
+            <button onclick="submitName()">Submit</button>
+        </div>
+    </div>
+
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+        <section id="home" class="container">
+            <h1 id="welcomeText">Selamat datang di Website Saya</h1>
+        </section>
+
+        <section id="about" class="container">
+            <h2>About Us</h2>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>About Us</h3>
+                    <p>A brief introduction about who we are, our background, and our focus in digital development.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Skills</h3>
+                    <p>A collection of skills we excel in, including web development, UI/UX, and creative problem-solving.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Vision & Mission</h3>
+                    <p>Our commitment to delivering high-quality digital work with innovation, consistency, and user-focused design.</p>
+                </div>
+        </section>
+
+        <section id="portfolio" class="container">
+            <h2>Portofolio</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Landing Page Website</h3>
+                    <p>A modern landing page created using HTML, CSS, and JavaScript.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Mobile App UI Design</h3>
+                    <p>A clean and minimal mobile UI concept designed using Figma for a productivity app.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Portofolio Website</h3>
+                    <p>A personal portofolio website showcasing projects, skills, and contact form.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Dashboard UI</h3>
+                    <p>An admin dashboard concept designed with dark theme and interactive components.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="message" class="container">
+            <h2>Message Us</h2>
+            <form>
+                <label>Nama:</label><br>
+                <input type="text"><br><br>
+
+                <label>Email:</label><br>
+                <input type="email"><br><br>
+
+                <label>Pesan:</label><br>
+                <textarea rows="5"></textarea><br><br>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Portfolio Pribadi</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
